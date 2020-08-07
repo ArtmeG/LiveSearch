@@ -25,7 +25,6 @@ fetch('https://pokeapi.co/api/v2/pokemon/')
     .then(function (data) {
         charcters = data.results;
         updateList(charcters);
-        console.log(charcters);
     });
 
 $input.addEventListener('input', function () {
