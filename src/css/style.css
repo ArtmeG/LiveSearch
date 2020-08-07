@@ -1,0 +1,39 @@
+.form {
+  display: inline-block;
+  position: relative;
+}
+.form.active .drop-container {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
+}
+.form .drop-container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  min-width: 100%;
+  visibility: visible;
+  opacity: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  max-height: 200px;
+  box-sizing: border-box;
+  transform: translateY(-5px);
+  padding: 10px 0;
+  overflow-y: auto;
+}
+.form .drop-container ul {
+  margin: 0;
+  padding: 0;
+}
+.form .drop-container ul li {
+  padding: 12px 20px;
+  display: block;
+  cursor: pointer;
+}
+.form .drop-container ul li:hover {
+  background-color: #aaaaaa;
+}
