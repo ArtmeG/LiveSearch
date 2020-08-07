@@ -48,6 +48,5 @@ $input.addEventListener('blur', function () {
 });
 
 $list.addEventListener('click', function (event) {
-    console.log(event.target.innerText);
     $input.value = event.target.innerText;
 });
